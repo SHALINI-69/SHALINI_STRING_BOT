@@ -8,8 +8,7 @@
   <img src="https://te.legra.ph/file/07e5b7d11e3a834ad3826.jpg">
 </p>
 
-_**ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [sᴛʀɪɴɢ ғᴀᴛʜᴇʀ](https://t.me/StringFatherBot)**_
-━━━━━━━━━━━━━━━━━━━━
+
 
 <p align="center">
 <a href="https://github.com/AnonymousX1025/StringGenBot/stargazers"><img src="https://img.shields.io/github/stars/AnonymousX1025/StringGenBot?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars"/></a>

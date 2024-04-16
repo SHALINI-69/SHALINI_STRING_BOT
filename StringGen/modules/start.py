@@ -20,7 +20,7 @@ async def f_start(_, message: Message):
         photo=nekos.img("neko"),
         caption=f"ʜᴇʏ {message.from_user.mention},\n\n๏ ᴛʜɪs ɪs {Anony.mention},\nAɴ sᴛʀɪɴɢ sᴇssɪᴏɴ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ, ᴡʀɪᴛᴛᴇɴ ɪɴ ᴩʏᴛʜᴏɴ ᴡɪᴛʜ ᴛʜᴇ ʜᴇʟᴩ ᴏғ ᴩʏʀᴏɢʀᴀᴍ.",
         reply_markup=keyboard,
-        disable_web_page_preview=True,
+     #   disable_web_page_preview=True,
     )
     await add_served_user(message.from_user.id)
     await Anony.send_message(

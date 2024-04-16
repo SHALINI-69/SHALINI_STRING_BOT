@@ -1,6 +1,6 @@
 from pyrogram import filters
 from pyrogram.types import CallbackQuery
-
+import nekos
 from StringGen import Anony
 from StringGen.utils import gen_key
 from StringGen.modules.gen import gen_session
@@ -13,8 +13,9 @@ async def cb_choose(_, cq: CallbackQuery):
     await cq.answer()
     query = cq.matches[0].group(1)
     if query == "gensession":
-        return await cq.message.reply_text(
-            text="<b>» ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ғᴏʀ ɢᴇɴᴇʀᴀᴛɪɴɢ ʏᴏᴜʀ sᴇssɪᴏɴ :</b>",
+        return await cq.message.reply_photo(
+            photo=nekos.img("neko"),
+            caption="<b>» ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ғᴏʀ ɢᴇɴᴇʀᴀᴛɪɴɢ ʏᴏᴜʀ sᴇssɪᴏɴ :</b>",
             reply_markup=gen_key,
         )
     elif query.startswith("pyrogram") or query.startswith("telethon"):

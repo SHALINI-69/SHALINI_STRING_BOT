@@ -28,7 +28,7 @@ async def anony_boot():
     LOGGER.info(f"@{Anony.username} Started \n MADE BY SHALINI")
     await Anony.send_message(
                 LOG_GROUP_ID,
-                f"{Anony.mention} \n Bᴏᴛ Sᴛᴀʀᴛᴇᴅ ",
+                f"{Anony.mention} \n\n Bᴏᴛ Sᴛᴀʀᴛᴇᴅ ",
               )
     await idle()
 

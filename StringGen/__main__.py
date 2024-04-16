@@ -6,6 +6,14 @@ from pyrogram import idle
 from StringGen import LOGGER, Anony
 from StringGen.modules import ALL_MODULES
 
+import os
+import re
+from os import getenv
+import time
+
+
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002041372224"))
+
 
 async def anony_boot():
     try:
@@ -17,7 +25,11 @@ async def anony_boot():
     for all_module in ALL_MODULES:
         importlib.import_module("StringGen.modules." + all_module)
 
-    LOGGER.info(f"@{Anony.username} Started.")
+    LOGGER.info(f"@{Anony.username} Started \n MADE BY SHALINI")
+    await Anony.send_message(
+                LOG_GROUP_ID,
+                f"{Anony.mention} \n Bᴏᴛ Sᴛᴀʀᴛᴇᴅ ",
+              )
     await idle()
 
 
